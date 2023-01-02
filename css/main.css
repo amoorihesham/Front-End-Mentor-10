@@ -1,0 +1,168 @@
+/* Import The google Font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* ******************************************************************************************** */
+/* Vars */
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --bright-Yellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(203, 44%, 90%);
+  --grayishBlue: hsl(218, 22%, 67%);
+  --fontFamily: "Karla", sans-serif;
+  --whit-txt: hsl(203, 44%, 100%);
+}
+/* ******************************************************************************************** */
+/* Start Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--lightGray);
+}
+ul {
+  list-style: none;
+}
+/* ******************************************************************************************** */
+.container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px #b0b0b0;
+  width: 640px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 4rem;
+}
+.container .top-info {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+}
+.container .top-info .heading {
+  color: var(--Cyan);
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.container .top-info .mony-p {
+  color: var(--bright-Yellow);
+  margin-bottom: 0.7rem;
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.container .top-info .info {
+  color: var(--grayishBlue);
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.container .bottom-main {
+  display: flex;
+}
+.container .bottom-main .plan-left {
+  background-color: var(--Cyan);
+  width: 320px;
+  padding: 40px;
+}
+.container .bottom-main .plan-left .plan-name {
+  color: var(--whit-txt);
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.container .bottom-main .plan-left .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin-bottom: 0.5rem;
+}
+.container .bottom-main .plan-left .dollar {
+  color: var(--whit-txt);
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.container .bottom-main .plan-left .time {
+  color: var(--lightGray);
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.container .bottom-main .plan-left .benfit {
+  color: var(--whit-txt);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--fontFamily);
+  width: 238px;
+}
+.container .bottom-main .plan-left .btn {
+  background-color: var(--bright-Yellow);
+  color: var(--whit-txt);
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 0.3rem;
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 2rem;
+  box-shadow: 0px 2px 14px 0px #737373de;
+}
+.container .bottom-main .why-right {
+  background-color: hsl(179, 47%, 52%);
+  width: 320px;
+  padding: 40px;
+}
+.container .bottom-main .why-right .right-p {
+  color: var(--whit-txt);
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.container .bottom-main .why-right ul li {
+  margin-bottom: 5px;
+  color: var(--lightGray);
+  font-size: 14px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 610px;
+    margin: 2rem 0;
+  }
+  .container .top-info {
+    padding: 25px;
+  }
+  .container .bottom-main .plan-left {
+    padding: 25px;
+  }
+  .container .bottom-main .why-right {
+    padding: 25px;
+  }
+}
+@media (max-width: 610px) {
+  .container {
+    width: 320px;
+    margin: 2rem 0;
+  }
+  .container .bottom-main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* **************************************************************** */
